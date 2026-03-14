@@ -1,4 +1,4 @@
-// New Update 2
+// Checking Queue
 package main
 
 import (
