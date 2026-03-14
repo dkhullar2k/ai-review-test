@@ -1,6 +1,9 @@
-// Hello
-// Lets change this file
-// Checking second time
+package main
 
-//Lets test the functionality
-//Hello World!
+import "fmt"
+
+func main() {
+    for i := 0; i < 5; i++ {
+        fmt.Println("Hello World")
+    }
+}
