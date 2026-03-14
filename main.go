@@ -1,4 +1,4 @@
-// Checking Queue once again
+// Final Checking queue and worker
 package main
 
 import (
