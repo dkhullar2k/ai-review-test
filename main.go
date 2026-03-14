@@ -1,4 +1,4 @@
-// Update 2
+// New Update 2
 package main
 
 import (
