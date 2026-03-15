@@ -1,4 +1,4 @@
-// Checking functionality of queue, worker & db
+// Check functionality of queue, worker & db
 package main
 
 import (
