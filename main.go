@@ -1,4 +1,4 @@
-// Final Checking queue and worker
+// Final Checking queue, worker & db
 package main
 
 import (
