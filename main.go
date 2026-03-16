@@ -1,4 +1,4 @@
-// Check end-to-end functionality
+// Check end-to-end functionality for the project
 package main
 
 import (
