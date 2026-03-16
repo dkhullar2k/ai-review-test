@@ -1,26 +1,32 @@
-// Check end-to-end functionality for the project
 package main
 
 import (
     "fmt"
+    "log"
+    "strings"
 )
 
-// printMessage prints the given message a specified number of times.
-// It returns an error if the count is invalid.
-func printMessage(message string, count int) error {
+func generateMessages(message string, count int) ([]string, error) {
+    if strings.TrimSpace(message) == "" {
+        return nil, fmt.Errorf("message cannot be empty")
+    }
     if count <= 0 {
-        return fmt.Errorf("count must be greater than zero")
+        return nil, fmt.Errorf("count must be greater than zero")
     }
 
-    for i := 1; i <= count; i++ {
-        fmt.Printf("%s #%d\n", message, i)
+    msgs := make([]string, count)
+    for i := 0; i < count; i++ {
+        msgs[i] = fmt.Sprintf("%s #%d", message, i+1)
     }
-    return nil
+    return msgs, nil
 }
 
 func main() {
-    // Example usage
-    if err := printMessage("Hello World", 5); err != nil {
-        fmt.Println("Error:", err)
+    msgs, err := generateMessages("Hello World", 5)
+    if err != nil {
+        log.Fatalf("Error: %v", err)
+    }
+    for _, msg := range msgs {
+        fmt.Println(msg)
     }
 }
