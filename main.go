@@ -1,4 +1,4 @@
-// Adding comment
+// Adding comment for clarity
 package main
 
 import (
